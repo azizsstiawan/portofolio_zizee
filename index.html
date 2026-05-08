@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio aziz stiawan</title>
+
+    <!-- cdn tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide icon cdn -->
+    <script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body
+    class="bg-gray-950 text-white antialiased selection:bg-blue-500 selection:text-white"
+  >
+    <!-- NAVBAR -->
+    <nav
+      class="sticky top-0 z-50 backdrop-blur bg-gray-900/70 border-b border-gray-800"
+    >
+      <div
+        class="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto"
+      >
+        <h1 class="text-xl font-bold text-blue-400">aziz stiawan</h1>
+
+        <ul class="hidden md:flex gap-5 text-gray-300">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+          <li><a href="#projects" class="nav-link">project</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#social" class="nav-link">Social</a></li>
+        </ul>
+
+        <!-- MOBILE BUTTON -->
+        <button
+          id="menuBtn"
+          class="md:hidden text-white"
+          aria-label="Open menu"
+          title="Open menu"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-[-100%] w-[280px] h-screen bg-gray-900/95 backdrop-blur-xl border-l border-gray-800 z-50 transition-all duration-500 md:hidden"
+      >
+        <!-- HEADER -->
+        <div
+          class="flex justify-between items-center p-6 border-b border-gray-800"
+        >
+          <h2 class="text-xl font-bold text-blue-400">aziz</h2>
+
+          <button id="closeMenu" aria-label="Close menu" title="Close menu">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <!-- LINKS -->
+        <ul class="flex flex-col gap-8 p-8 text-lg text-gray-300">
+          <li>
+            <a href="#home" class="mobile-link"> Home </a>
+          </li>
+
+          <li>
+            <a href="#about" class="mobile-link"> About </a>
+          </li>
+
+          <li>
+            <a href="#tech-stack" class="mobile-link"> Tech Stack </a>
+          </li>
+
+          <li>
+            <a href="#projects" class="mobile-link"> Projects </a>
+          </li>
+
+          <li>
+            <a href="#journey" class="mobile-link"> Journey </a>
+          </li>
+
+          <li>
+            <a href="#contact" class="mobile-link"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center px-6 overflow-hidden reveal"
+    >
+      <!-- 🌌 BACKGROUND EFFECT -->
+      <div class="absolute inset-0 pointer-events-none overflow-hidden -z-10">
+        <!-- BASE COLOR -->
+        <div class="absolute inset-0 pointer-events-none bg-gray-900"></div>
+
+        <!-- GRID -->
+        <div
+          class="absolute inset-0 pointer-events-none bg-grid opacity-10"
+        ></div>
+
+        <!-- BLOB -->
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+
+        <!-- NOISE -->
+        <div class="noise"></div>
+
+        <div class="particles"></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div
+        class="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- TEXT -->
+        <div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+            Hi, I'm <span class="text-blue-400">Aziz Stiawan</span>
+          </h1>
+
+          <h2 class="text-xl md:text-2xl mb-4 text-gray-300 leading-relaxed">
+            I build modern, interactive, and high-performance digital
+            experiences for the web.
+          </h2>
+
+          <p class="text-gray-400 mb-6">
+            <span id="typingText"></span><span class="animate-pulse">|</span>
+          </p>
+
+          <div class="flex gap-4 flex-wrap">
+            <!-- CONTACT -->
+            <a href="#contact" class="hero-btn-primary">
+              <i data-lucide="send"></i>
+
+              Contact Me
+            </a>
+
+            <!-- PROJECT -->
+            <a href="#projects" class="hero-btn-secondary">
+              <i data-lucide="layers-3"></i>
+
+              View Projects
+            </a>
+          </div>
+
+          <!-- TECH ICON -->
+          <div
+            class="hero-tech-icons flex items-center gap-4 mt-8 text-gray-400"
+          >
+            <i data-lucide="file-code-2"></i>
+            <i data-lucide="atom"></i>
+            <i data-lucide="wind"></i>
+            <i data-lucide="database"></i>
+          </div>
+        </div>
+
+        <!-- foto -->
+        <div class="flex justify-center perspective">
+          <div
+            id="card"
+            class="card-3d relative group overflow-hidden rounded-2xl"
+          >
+            ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+            <!-- ✨ LIGHT (TENGAH) -->
+            <div id="cardLight" class="card-light z-20"></div>
+
+            <!-- BACKGROUND CIRCLE -->
+            <div class="hero-image-bg"></div>
+            <!-- IMAGE (PALING ATAS) -->
+            <img
+              alt=""
+              src="assets/WhatsApp Image 2026-05-08 at 14.44.12.jpeg"
+              class="relative w-60 md:w-64 rounded-2xl shadow-2xl z-10"
+            />
+
+            <!-- FLOATING BADGE -->
+            <div class="floating-badge badge-1">🚀 Frontend Developer</div>
+
+            <div class="floating-badge badge-2">⚡ Modern UI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 px-6 relative overflow-hidden reveal">
+      <!-- BACKGROUND GLOW -->
+      <div
+        class="absolute top-0 left-0 w-96 h-96 bg-blue-500 blur-3xl opacity-10"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 blur-3xl opacity-10"
+      ></div>
+
+      <div class="max-w-6xl mx-auto relative z-10 section-box">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- FOTO -->
+          <div class="flex justify-center">
+            <div class="relative group">
+              <!-- glow frame -->
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-60 group-hover:opacity-100 transition"
+              ></div>
+
+              <img
+                src="assets/WhatsApp Image 2026-05-08 at 14.44.12.jpeg"
+                class="relative w-64 rounded-2xl"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- TEXT -->
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              About <span class="text-blue-400">Me</span>
+            </h2>
+
+            <p class="text-gray-400 leading-relaxed mb-6">
+              I’m a web developer who enjoys building modern and interactive
+              websites. I focus on clean design, smooth user experience, and
+              writing efficient code.
+            </p>
+
+            <!-- STATS -->
+            <div class="flex gap-10 mt-6">
+              <div>
+                <h3 class="text-2xl font-bold text-blue-400">2+</h3>
+                <p class="text-gray-500 text-sm">Years Experience</p>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-bold text-blue-400">10+</h3>
+                <p class="text-gray-500 text-sm">Projects Done</p>
+              </div>
+
+              <div>
+                <h3 class="text-2xl font-bold text-blue-400">5+</h3>
+                <p class="text-gray-500 text-sm">Clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section id="tech-stack" class="py-24 px-6 relative overflow-hidden reveal">
+      <!-- 🔥 BACKGROUND GLOW -->
+      <div
+        class="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 blur-3xl"
+      ></div>
+
+      <div
+        class="absolute bottom-20 right-20 w-72 h-72 bg-purple-500/10 blur-3xl"
+      ></div>
+
+      <div class="max-w-6xl mx-auto relative z-10 section-box">
+        <!-- TITLE -->
+        <div class="text-center mb-14">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Creative & Tech Stack
+          </h2>
+
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Technologies and tools I use to build modern, scalable, and
+            interactive digital products.
+          </p>
+        </div>
+
+        <!-- GRID -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- HTML -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="file-code-2" class="tech-icon text-orange-400"></i>
+
+            <h3>HTML</h3>
+            <p>Web Structure</p>
+          </div>
+
+          <!-- TAILWIND -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="wind" class="tech-icon text-cyan-400"></i>
+
+            <h3>Tailwind CSS</h3>
+            <p>Modern Styling</p>
+          </div>
+
+          <!-- JAVASCRIPT -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="code-2" class="tech-icon text-yellow-400"></i>
+
+            <h3>JavaScript</h3>
+            <p>Interactive UI</p>
+          </div>
+
+          <!-- VUE -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="hexagon" class="tech-icon text-green-400"></i>
+
+            <h3>Vue.js</h3>
+            <p>Frontend Framework</p>
+          </div>
+
+          <!-- EXPRESS -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="server" class="tech-icon text-gray-300"></i>
+
+            <h3>Express.js</h3>
+            <p>Backend Framework</p>
+          </div>
+
+          <!-- NODE -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="network" class="tech-icon text-lime-400"></i>
+
+            <h3>Node.js</h3>
+            <p>Runtime Environment</p>
+          </div>
+
+          <!-- REACT -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="atom" class="tech-icon text-blue-400"></i>
+
+            <h3>React.js</h3>
+            <p>Frontend Library</p>
+          </div>
+
+          <!-- NEXT -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="layers-3" class="tech-icon text-white"></i>
+
+            <h3>Next.js</h3>
+            <p>Fullstack Framework</p>
+          </div>
+
+          <!-- FLUTTER -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="smartphone" class="tech-icon text-sky-400"></i>
+
+            <h3>Flutter</h3>
+            <p>Mobile Development</p>
+          </div>
+
+          <!-- FIREBASE -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="flame" class="tech-icon text-orange-500"></i>
+
+            <h3>Firebase</h3>
+            <p>Backend Services</p>
+          </div>
+
+          <!-- SUPABASE -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="database" class="tech-icon text-emerald-400"></i>
+
+            <h3>Supabase</h3>
+            <p>Open Source Backend</p>
+          </div>
+
+          <!-- VS CODE -->
+          <div class="tech-card stagger-item">
+            <i data-lucide="monitor" class="tech-icon text-blue-500"></i>
+
+            <h3>VS Code</h3>
+            <p>Code Editor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECT SECTION =========== -->
+    <section id="projects" class="py-24 px-6 relative overflow-hidden reveal">
+      <!-- BACKGROUND GLOW -->
+      <div
+        class="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 blur-3xl"
+      ></div>
+
+      <div
+        class="absolute bottom-20 right-20 w-72 h-72 bg-purple-500/10 blur-3xl"
+      ></div>
+
+      <div class="max-w-6xl mx-auto relative z-10 section-box">
+        <!-- TITLE -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Some projects I've built focusing on modern UI, performance, and
+            user experience.
+          </p>
+        </div>
+
+        <!-- ================= FEATURED PROJECT ================= -->
+        <div
+          class="project-feature group relative overflow-hidden rounded-3xl border border-white/10 mb-10"
+        >
+          <!-- IMAGE -->
+          <img
+            src="assets/project/project1.png"
+            alt=""
+            class="w-full h-[500px] object-cover project-image"
+          />
+
+          <!-- OVERLAY -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"
+          ></div>
+
+          <!-- CONTENT -->
+          <div class="absolute bottom-0 left-0 p-8 md:p-10 w-full">
+            <!-- BADGE -->
+            <div class="flex gap-3 flex-wrap mb-5">
+              <span class="project-badge"> React </span>
+
+              <span class="project-badge"> Tailwind </span>
+
+              <span class="project-badge"> Supabase </span>
+            </div>
+
+            <!-- TITLE -->
+            <h3 class="text-3xl md:text-5xl font-bold mb-4">
+              EcoSphere Platform
+            </h3>
+
+            <!-- DESC -->
+            <p class="text-gray-300 max-w-2xl mb-6 leading-relaxed">
+              A modern environmental education platform with interactive UI,
+              authentication system, dashboard, and responsive experience.
+            </p>
+
+            <!-- BUTTON -->
+            <div class="flex gap-4 flex-wrap">
+              <!-- LIVE -->
+              <a
+                href="https://ecosphere-chi.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-btn-primary inline-block"
+              >
+                Live Preview
+              </a>
+
+              <!-- GITHUB -->
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-btn-secondary inline-block"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= SMALL PROJECTS ================= -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- CARD -->
+          <div class="project-card stagger-item">
+            <div class="project-image-wrapper">
+              <img
+                src="assets/project2.jpg"
+                class="project-card-image"
+                alt=""
+              />
+            </div>
+
+            <div class="p-6">
+              <!-- TAG -->
+              <div class="flex gap-2 flex-wrap mb-4">
+                <span class="project-badge">Vue</span>
+                <span class="project-badge">Express</span>
+              </div>
+
+              <!-- TITLE -->
+              <h3 class="text-xl font-bold mb-3">Ticket Booking Website</h3>
+
+              <!-- DESC -->
+              <p class="text-gray-400 mb-6">
+                Full responsive ticket booking platform with clean modern
+                interface.
+              </p>
+
+              <!-- BUTTON -->
+              <div class="flex gap-3">
+                <button
+                  class="project-btn-primary text-sm px-4 py-2 openModal"
+                  data-project="ticket"
+                >
+                  View Detail
+                </button>
+                <button class="project-btn-secondary text-sm px-4 py-2">
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="project-card stagger-item">
+            <div class="project-image-wrapper">
+              <img
+                src="assets/project3.jpg"
+                class="project-card-image"
+                alt=""
+              />
+            </div>
+
+            <div class="p-6">
+              <div class="flex gap-2 flex-wrap mb-4">
+                <span class="project-badge">Flutter</span>
+                <span class="project-badge">Firebase</span>
+              </div>
+
+              <h3 class="text-xl font-bold mb-3">Finance Tracker App</h3>
+
+              <p class="text-gray-400 mb-6">
+                Mobile finance management application with analytics and modern
+                dashboard.
+              </p>
+
+              <div class="flex gap-3">
+                <button
+                  class="project-btn-primary text-sm px-4 py-2 openModal"
+                  data-project="finance"
+                >
+                  View Detail
+                </button>
+
+                <button class="project-btn-secondary text-sm px-4 py-2">
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="project-card stagger-item">
+            <div class="project-image-wrapper">
+              <img
+                src="assets/project4.jpg"
+                class="project-card-image"
+                alt=""
+              />
+            </div>
+
+            <div class="p-6">
+              <div class="flex gap-2 flex-wrap mb-4">
+                <span class="project-badge">Next.js</span>
+                <span class="project-badge">Supabase</span>
+              </div>
+
+              <h3 class="text-xl font-bold mb-3">Portfolio Website</h3>
+
+              <p class="text-gray-400 mb-6">
+                Interactive modern portfolio website with smooth animation and
+                responsive layout.
+              </p>
+
+              <div class="flex gap-3">
+                <button
+                  class="project-btn-primary text-sm px-4 py-2 openModal"
+                  data-project="portfolio"
+                >
+                  View Detail
+                </button>
+
+                <button class="project-btn-secondary text-sm px-4 py-2">
+                  GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY / EXPERIENCE -->
+    <section id="journey" class="py-24 px-6 relative overflow-hidden reveal">
+      <!-- BACKGROUND GLOW -->
+      <div
+        class="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 blur-3xl"
+      ></div>
+
+      <div
+        class="absolute bottom-20 right-20 w-72 h-72 bg-purple-500/10 blur-3xl"
+      ></div>
+
+      <div class="max-w-5xl mx-auto relative z-10 section-box">
+        <!-- TITLE -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">My Journey</h2>
+
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            My learning journey and experience in web & software development.
+          </p>
+        </div>
+
+        <!-- TIMELINE -->
+        <div class="relative border-l border-blue-500/30 ml-4 space-y-14">
+          <!-- ITEM -->
+          <div class="relative pl-10 stagger-item">
+            <!-- DOT -->
+            <div
+              class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-blue-500 shadow-lg shadow-blue-500/50"
+            ></div>
+
+            <!-- CARD -->
+            <div
+              class="bg-gray-900/60 border border-gray-800 rounded-2xl p-6 hover:border-blue-500/40 transition"
+            >
+              <span class="text-sm text-blue-400 font-semibold"> 2024 </span>
+
+              <h3 class="text-2xl font-bold mt-2 mb-3">
+                Started Learning Web Development
+              </h3>
+
+              <p class="text-gray-400 leading-relaxed">
+                Began learning HTML, CSS, and JavaScript while exploring modern
+                UI design and responsive websites.
+              </p>
+            </div>
+          </div>
+
+          <!-- ITEM -->
+          <div class="relative pl-10 stagger-item">
+            <!-- DOT -->
+            <div
+              class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-purple-500 shadow-lg shadow-purple-500/50"
+            ></div>
+
+            <!-- CARD -->
+            <div
+              class="bg-gray-900/60 border border-gray-800 rounded-2xl p-6 hover:border-purple-500/40 transition"
+            >
+              <span class="text-sm text-purple-400 font-semibold"> 2025 </span>
+
+              <h3 class="text-2xl font-bold mt-2 mb-3">Built Real Projects</h3>
+
+              <p class="text-gray-400 leading-relaxed">
+                Developed modern web and mobile projects including dashboard
+                systems, finance apps, and environmental education platforms.
+              </p>
+            </div>
+          </div>
+
+          <!-- ITEM -->
+          <div class="relative pl-10 stagger-item">
+            <!-- DOT -->
+            <div
+              class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-pink-500 shadow-lg shadow-pink-500/50"
+            ></div>
+
+            <!-- CARD -->
+            <div
+              class="bg-gray-900/60 border border-gray-800 rounded-2xl p-6 hover:border-pink-500/40 transition"
+            >
+              <span class="text-sm text-pink-400 font-semibold"> 2026 </span>
+
+              <h3 class="text-2xl font-bold mt-2 mb-3">
+                Focused on Frontend Engineering
+              </h3>
+
+              <p class="text-gray-400 leading-relaxed">
+                Focused on building interactive UI, smooth user experience,
+                modern animations, and scalable frontend applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 px-6 reveal relative overflow-hidden">
+      <!-- Glow -->
+      <div
+        class="absolute top-0 left-0 w-72 h-72 bg-blue-500 blur-3xl opacity-10"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500 blur-3xl opacity-10"
+      ></div>
+
+      <div class="max-w-4xl mx-auto section-box text-center relative z-10">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Contact Me</h2>
+
+        <p class="text-gray-400 mb-10">
+          Let’s build something amazing together 🚀
+        </p>
+
+        <form class="space-y-6">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full p-3 rounded-xl bg-gray-900/60 border border-gray-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full p-3 rounded-xl bg-gray-900/60 border border-gray-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
+          />
+
+          <textarea
+            rows="5"
+            placeholder="Your Message"
+            class="w-full p-3 rounded-xl bg-gray-900/60 border border-gray-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl transition w-full shadow-lg hover:translate-y-[-2px]"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- 🌐 SOCIAL LINKS -->
+    <!-- ===================================================== -->
+
+    <section id="social" class="py-24 px-6 relative overflow-hidden reveal">
+      <!-- BACKGROUND GLOW -->
+      <div
+        class="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-3xl"
+      ></div>
+
+      <div
+        class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/10 blur-3xl"
+      ></div>
+
+      <div class="max-w-6xl mx-auto relative z-10 section-box">
+        <!-- TITLE -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Connect With Me</h2>
+
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Feel free to connect with me through social platforms and explore my
+            work.
+          </p>
+        </div>
+
+        <!-- GRID -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- GITHUB -->
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card stagger-item"
+          >
+            <div class="social-icon github">
+              <i data-lucide="github"></i>
+            </div>
+
+            <h3 class="text-xl font-bold mb-2">GitHub</h3>
+
+            <p class="text-gray-400 text-sm">
+              Explore my repositories and projects
+            </p>
+          </a>
+
+          <!-- LINKEDIN -->
+          <a
+            href="https://linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card stagger-item"
+          >
+            <div class="social-icon linkedin">
+              <i data-lucide="linkedin"></i>
+            </div>
+
+            <h3 class="text-xl font-bold mb-2">LinkedIn</h3>
+
+            <p class="text-gray-400 text-sm">Connect professionally with me</p>
+          </a>
+
+          <!-- INSTAGRAM -->
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card stagger-item"
+          >
+            <div class="social-icon instagram">
+              <i data-lucide="instagram"></i>
+            </div>
+
+            <h3 class="text-xl font-bold mb-2">Instagram</h3>
+
+            <p class="text-gray-400 text-sm">See my activities and content</p>
+          </a>
+
+          <!-- EMAIL -->
+          <a href="mailto:your@email.com" class="social-card stagger-item">
+            <div class="social-icon email">
+              <i data-lucide="mail"></i>
+            </div>
+
+            <h3 class="text-xl font-bold mb-2">Email</h3>
+
+            <p class="text-gray-400 text-sm">Contact me directly via email</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- 🚀 FOOTER -->
+    <!-- ===================================================== -->
+
+    <footer
+      class="relative overflow-hidden border-t border-gray-800 py-16 px-6"
+    >
+      <!-- BACKGROUND GLOW -->
+      <div
+        class="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-3xl"
+      ></div>
+
+      <div
+        class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/10 blur-3xl"
+      ></div>
+
+      <div class="max-w-6xl mx-auto relative z-10">
+        <!-- TOP -->
+        <div class="grid md:grid-cols-3 gap-12 pb-12 border-b border-gray-800">
+          <!-- BRAND -->
+          <div>
+            <h2 class="text-3xl font-bold text-blue-400 mb-4">Zenky</h2>
+
+            <p class="text-gray-400 leading-relaxed">
+              Frontend developer focused on modern, interactive, and
+              user-friendly digital experiences.
+            </p>
+          </div>
+
+          <!-- QUICK LINKS -->
+          <div>
+            <h3 class="text-xl font-semibold mb-5">Quick Links</h3>
+
+            <ul class="space-y-3 text-gray-400">
+              <li>
+                <a href="#home" class="footer-link"> Home </a>
+              </li>
+
+              <li>
+                <a href="#about" class="footer-link"> About </a>
+              </li>
+
+              <li>
+                <a href="#projects" class="footer-link"> Projects </a>
+              </li>
+
+              <li>
+                <a href="#contact" class="footer-link"> Contact </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SOCIAL -->
+          <div>
+            <h3 class="text-xl font-semibold mb-5">Connect</h3>
+
+            <div class="flex gap-4">
+              <!-- GITHUB -->
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social"
+                aria-label="GitHub"
+                title="GitHub"
+              >
+                <i data-lucide="github"></i>
+              </a>
+
+              <!-- LINKEDIN -->
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+              >
+                <i data-lucide="linkedin"></i>
+              </a>
+
+              <!-- INSTAGRAM -->
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social"
+                aria-label="Instagram"
+                title="Instagram"
+              >
+                <i data-lucide="instagram"></i>
+              </a>
+
+              <!-- EMAIL -->
+              <a
+                href="mailto:your@email.com"
+                class="footer-social"
+                aria-label="Email"
+                title="Email"
+              >
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM -->
+        <div
+          class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-gray-500 text-sm">
+            © 2026 Zenky Setiawan. Built with passion 🚀
+          </p>
+
+          <!-- BACK TO TOP -->
+          <a href="#home" class="back-to-top"> Back to Top ↑ </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================================================== -->
+    <!-- ✨ PROJECT MODAL -->
+    <!-- ===================================================== -->
+
+    <div
+      id="projectModal"
+      class="fixed inset-0 bg-black/70 backdrop-blur-sm z-[999] flex items-center justify-center opacity-0 pointer-events-none transition duration-300"
+    >
+      <!-- MODAL BOX -->
+      <div
+        id="modalContent"
+        class="bg-gray-900 border border-gray-800 rounded-3xl w-[90%] max-w-4xl max-h-[90vh] overflow-y-auto transform scale-90 transition duration-300"
+      >
+        <!-- IMAGE -->
+        <img
+          id="modalImage"
+          src=""
+          class="w-full h-[260px] md:h-[400px] object-cover rounded-t-3xl"
+          alt=""
+        />
+
+        <!-- CONTENT -->
+        <div class="p-8">
+          <!-- HEADER -->
+          <div class="flex justify-between items-start mb-6">
+            <div>
+              <h2 id="modalTitle" class="text-3xl font-bold mb-2">
+                Project Title
+              </h2>
+
+              <p id="modalDescription" class="text-gray-400">
+                Project description
+              </p>
+            </div>
+
+            <!-- CLOSE -->
+            <button
+              id="closeModal"
+              class="text-gray-400 hover:text-white text-3xl"
+              aria-label="Close modal"
+              title="Close modal"
+            >
+              ×
+            </button>
+          </div>
+
+          <!-- TECH STACK -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-4">Tech Stack</h3>
+
+            <div id="modalStack" class="flex gap-3 flex-wrap"></div>
+          </div>
+
+          <!-- FEATURES -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-4">Features</h3>
+
+            <ul id="modalFeatures" class="space-y-3 text-gray-400"></ul>
+          </div>
+
+          <!-- BUTTONS -->
+          <div class="flex gap-4 flex-wrap">
+            <a
+              id="modalLive"
+              href="#"
+              target="_blank"
+              class="project-btn-primary"
+            >
+              Live Preview
+            </a>
+
+            <a
+              id="modalGithub"
+              href="#"
+              target="_blank"
+              class="project-btn-secondary"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
